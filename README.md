@@ -39,5 +39,5 @@ pipenv run streamlit run app_sample.py
 
  ### 注意点
 
-*   起動するStreamlitアプリのURL（http://localhost:8501）と[Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard) のアプリ管理画面で登録する**Callback URI(Redirect URL)** は同一のURLにすること
+*   起動するStreamlitアプリのURL（`http://localhost:8501`） と[Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard) のアプリ管理画面で登録する**Callback URI(Redirect URL)** は同一のURLにすること
     *   アプリの管理画面では複数のCallbackURLが登録できるが，一番上に登録すること
