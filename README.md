@@ -19,7 +19,7 @@ pipenv install
 2.    [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard) で新たなアプリを作成する
 3.   作成したアプリの "Keys and tokens" タブで **ConsumerKey**/ **ConsumerSecret** を取得する
 4.   作成したアプリの "Settings"タブの "User authentication settings"にて **Callback URI(Redirect URL)** を` http://localhost:8501`に設定する
-     1.   MacOSの一部のバージョン（MojaveやCatalina等）では，localhostが使えないことがある．その場合は、`http://127.0.0.1:8501`
+     1.   MacOSの一部のバージョン（MojaveやCatalina等）では，localhostが使えないことがある．その場合は、`http://127.0.0.1:8501`を代わりに設定する
 5.   `TwitterOAuth_Streamlit/streamlit_twitter_oauth.py` の `consumer_key`, `consumer_secret` を3で取得した値に設定する
      1.   APIのトークンをコード内にベタ書きするのは望ましくないため，dotenvパッケージなどを利用して外部ファイルに記述することを推奨します
      2.   必要があれば `callback_url`を `http://127.0.0.1:8501`に変更する
